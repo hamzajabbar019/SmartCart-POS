@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide everything on the page when printing */
+  body * {
+    visibility: hidden !important;
+  }
+  
+  /* Show only the receipt container */
+  .printable-receipt, .printable-receipt * {
+    visibility: visible !important;
+  }
+  
+  /* Position and style the printable receipt for 80mm thermal receipt printers */
+  .printable-receipt {
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 0 !important;
+    width: 80mm !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-family: monospace, Courier, monospace !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    z-index: 9999 !important;
+  }
+
+  @page {
+    margin: 0;
+    size: auto;
+  }
+}

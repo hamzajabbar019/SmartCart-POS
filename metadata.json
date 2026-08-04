@@ -1,0 +1,6 @@
+{
+  "name": "SmartCart POS",
+  "description": "Cloud-based, AI-augmented Point-of-Sale platform for independent grocery stores and mini-marts with offline-first sync.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
